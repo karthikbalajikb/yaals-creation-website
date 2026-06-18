@@ -3,17 +3,21 @@ import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ProductsExplorer } from "@/components/ProductsExplorer";
 import { CTASection } from "@/components/CTASection";
+import { JsonLd } from "@/components/JsonLd";
 import { products } from "@/lib/products";
+import { productListSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Products",
   description:
     "Browse Yaal's Creation DIY painting kits — POP & clay figure kits for kids, adults, return gifts and character collections.",
+  alternates: { canonical: "/products" },
 };
 
 export default function ProductsPage() {
   return (
     <>
+      <JsonLd data={productListSchema()} />
       <section className="pt-12 sm:pt-16">
         <Container>
           <SectionHeading

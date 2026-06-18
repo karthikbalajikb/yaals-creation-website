@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Wholesale & Bulk Orders",
   description:
     "Wholesale and bulk pricing for Yaal's Creation painting kits — perfect for return gifts, birthday parties, schools, events and resellers. Custom themes and branding available.",
+  alternates: { canonical: "/wholesale" },
 };
 
 const tiers = [

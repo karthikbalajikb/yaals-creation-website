@@ -6,12 +6,14 @@ import { ProductImage } from "@/components/ProductImage";
 import { ProductCard } from "@/components/ProductCard";
 import { CTASection } from "@/components/CTASection";
 import { WhatsAppIcon } from "@/components/icons";
+import { JsonLd } from "@/components/JsonLd";
 import {
   categoryLabels,
   getProduct,
   products,
 } from "@/lib/products";
 import { whatsappLink } from "@/lib/site";
+import { absoluteUrl, breadcrumbSchema, productSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -25,12 +27,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return { title: "Product not found" };
+  const url = `/products/${product.slug}`;
   return {
     title: product.name,
     description: product.shortDescription,
+    alternates: { canonical: url },
     openGraph: {
       title: product.name,
       description: product.shortDescription,
+      url,
+      type: "website",
+      ...(product.image ? { images: [{ url: absoluteUrl(product.image) }] } : {}),
     },
   };
 }
@@ -49,6 +56,16 @@ export default async function ProductPage({
 
   return (
     <>
+      <JsonLd
+        data={[
+          productSchema(product),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Products", path: "/products" },
+            { name: product.name, path: `/products/${product.slug}` },
+          ]),
+        ]}
+      />
       <section className="pt-10 sm:pt-14">
         <Container>
           <nav className="mb-6 text-sm text-muted">

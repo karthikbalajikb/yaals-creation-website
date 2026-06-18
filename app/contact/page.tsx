@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Yaal's Creation. Order or ask anything on WhatsApp, follow us on Instagram, or send us an email.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

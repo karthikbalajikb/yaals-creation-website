@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "The story behind Yaal's Creation — a handmade DIY painting-kit brand on a mission to make screen-free creativity a joy for every child.",
+  alternates: { canonical: "/about" },
 };
 
 const values = [

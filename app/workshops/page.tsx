@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Workshops & Events",
   description:
     "Book a Yaal's Creation painting workshop for schools, birthdays, corporate events and get-togethers. We bring everything and create hands-on, screen-free creative fun — at your venue or ours.",
+  alternates: { canonical: "/workshops" },
 };
 
 const venues = [

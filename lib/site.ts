@@ -20,7 +20,25 @@ export const site = {
   // Social
   instagram: "https://instagram.com/shop.yaals_creations",
   instagramHandle: "@shop.yaals_creations",
+
+  // Brand / locale
+  locale: "en_IN",
+  currency: "INR",
+  foundingYear: "2024",
+  priceRange: "₹59–₹199",
+
+  // Geography served (helps local + generative search)
+  city: "Karaikal",
+  region: "Puducherry",
+  country: "India",
+  countryCode: "IN",
+  areaServed: ["Karaikal", "Chennai", "Puducherry", "Tamil Nadu", "India"],
 } as const;
+
+/**
+ * Canonical external profiles (used for schema.org `sameAs`).
+ */
+export const sameAs = [site.instagram] as const;
 
 /**
  * Build a wa.me link with a pre-filled message.
