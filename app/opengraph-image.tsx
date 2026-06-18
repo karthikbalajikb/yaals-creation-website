@@ -61,6 +61,8 @@ export default async function OpengraphImage() {
           </div>
           <div
             style={{
+              display: "flex",
+              flexDirection: "column",
               fontSize: 58,
               fontWeight: 800,
               color: "#2c2350",
@@ -68,9 +70,8 @@ export default async function OpengraphImage() {
               letterSpacing: -2,
             }}
           >
-            DIY Painting &
-            <br />
-            Clay Kits
+            <span>DIY Painting &</span>
+            <span>Clay Kits</span>
           </div>
           <div style={{ fontSize: 28, color: "#6b5e8c", maxWidth: 520 }}>
             Screen-free creative fun for kids & grown-ups · Return gifts ·
