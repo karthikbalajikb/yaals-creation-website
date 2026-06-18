@@ -27,7 +27,7 @@ export function organizationSchema() {
     url: site.url,
     description: site.description,
     slogan: site.tagline,
-    logo: absoluteUrl("/icon.svg"),
+    logo: absoluteUrl("/icon.png"),
     image: absoluteUrl("/opengraph-image"),
     email: site.email,
     telephone: `+${site.whatsappNumber}`,

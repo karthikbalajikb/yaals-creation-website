@@ -17,8 +17,8 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: "en-IN",
     categories: ["shopping", "education", "kids", "lifestyle"],
     icons: [
-      { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
-      { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
+      { src: "/icon.png", sizes: "297x308", type: "image/png", purpose: "any" },
+      { src: "/icon.png", sizes: "297x308", type: "image/png", purpose: "maskable" },
     ],
   };
 }
