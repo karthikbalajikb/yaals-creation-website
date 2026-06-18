@@ -42,7 +42,8 @@ export default async function OpengraphImage() {
           style={{
             width: 440,
             height: 440,
-            objectFit: "contain",
+            objectFit: "cover",
+            borderRadius: 999,
             flexShrink: 0,
           }}
         />
@@ -50,7 +51,7 @@ export default async function OpengraphImage() {
         <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
           <div
             style={{
-              fontSize: 40,
+              fontSize: 38,
               fontWeight: 800,
               color: "#5b3f96",
               letterSpacing: -1,
@@ -60,16 +61,18 @@ export default async function OpengraphImage() {
           </div>
           <div
             style={{
-              fontSize: 64,
+              fontSize: 58,
               fontWeight: 800,
               color: "#2c2350",
               lineHeight: 1.05,
               letterSpacing: -2,
             }}
           >
-            DIY Painting & Clay Kits
+            DIY Painting &
+            <br />
+            Clay Kits
           </div>
-          <div style={{ fontSize: 30, color: "#6b5e8c", maxWidth: 560 }}>
+          <div style={{ fontSize: 28, color: "#6b5e8c", maxWidth: 520 }}>
             Screen-free creative fun for kids & grown-ups · Return gifts ·
             Workshops · Wholesale
           </div>
