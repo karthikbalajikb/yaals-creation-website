@@ -40,7 +40,7 @@ const faqs = [
   {
     question: "How do I order from Yaal's Creation?",
     answer:
-      "Ordering is quick on WhatsApp at +91 82480 44970, or message us on Instagram @shop.yaals_creations. We're based in Karaikal and Chennai, India, and also host painting workshops for schools, birthdays and events.",
+      "Ordering is quick on WhatsApp at +91 82488 44970, or message us on Instagram @shop.yaals_creations. We're based in Karaikal and Chennai, India, and also host painting workshops for schools, birthdays and events.",
   },
 ];
 

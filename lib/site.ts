@@ -12,8 +12,8 @@ export const site = {
   url: "https://yaals-creation.vercel.app",
 
   // Contact
-  whatsappNumber: "918248044970", // international format, no '+' for wa.me
-  whatsappDisplay: "+91 82480 44970",
+  whatsappNumber: "918248844970", // international format, no '+' for wa.me
+  whatsappDisplay: "+91 82488 44970",
   email: "shop.yaals.creations@gmail.com",
   location: "Karaikal • Chennai, India",
 
