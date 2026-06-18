@@ -38,3 +38,7 @@
 - WhatsApp (preferred): https://wa.me/918248844970
 - Instagram DM: https://instagram.com/shop.yaals_creations
 - Email: shop.yaals.creations@gmail.com
+
+## Machine-readable feeds
+- Product feed (Google Shopping RSS): https://yaals-creation.vercel.app/feed.xml
+- Sitemap: https://yaals-creation.vercel.app/sitemap.xml
